@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - PC Zdobywca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">⚡ IGNACY ⚡</span>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Główna</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">O Ignacym</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link active">Galeria</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Kontakt</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link" id="loginBtn">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="login-modal" id="loginModal">
+        <div class="login-container glass-effect">
+            <button class="close-btn" id="closeLogin">&times;</button>
+            <h2 class="login-title">Zaloguj się</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Login:</label>
+                    <input type="text" id="username" placeholder="Wpisz login" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Hasło:</label>
+                    <input type="password" id="password" placeholder="Wpisz hasło" required>
+                </div>
+                <button type="submit" class="btn-login">Zaloguj się</button>
+                <p class="login-hint">💡 Hint: ignacy / 1234</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <h1 class="page-title">Galeria</h1>
+        <p class="page-subtitle">Momenty z życia Ignacego</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="section-container">
+            <div class="gallery-grid">
+                <!-- Gallery Items -->
+                <div class="gallery-item glass-effect">
+                    <div class="gallery-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span>🎮</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Gaming Sessions</h3>
+                        <p>24/7 Marathon</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item glass-effect">
+                    <div class="gallery-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span>💻</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Setup Ignacego</h3>
+                        <p>Najlepszy PC w mieście</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item glass-effect">
+                    <div class="gallery-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span>⚡</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Speed Run</h3>
+                        <p>Rekord świata?</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item glass-effect">
+                    <div class="gallery-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <span>🏆</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Trofea</h3>
+                        <p>Niepoliczalne zwycięstwa</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item glass-effect">
+                    <div class="gallery-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <span>🎯</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Precyzja</h3>
+                        <p>Niezawodny gracz</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item glass-effect">
+                    <div class="gallery-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">
+                            <span>🌟</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Gwiazda</h3>
+                        <p>Ignacy Returns</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item glass-effect">
+                    <div class="gallery-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span>🎪</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Domination</h3>
+                        <p>Kontrola całego serwera</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item glass-effect">
+                    <div class="gallery-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                            <span>👑</span>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Korona</h3>
+                        <p>Król komputera</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Ignacy - PC Zdobywca. Stworzona z ❤️ dla legendy.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

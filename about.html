@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Ignacym - PC Zdobywca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">⚡ IGNACY ⚡</span>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Główna</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link active">O Ignacym</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Galeria</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Kontakt</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link" id="loginBtn">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="login-modal" id="loginModal">
+        <div class="login-container glass-effect">
+            <button class="close-btn" id="closeLogin">&times;</button>
+            <h2 class="login-title">Zaloguj się</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Login:</label>
+                    <input type="text" id="username" placeholder="Wpisz login" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Hasło:</label>
+                    <input type="password" id="password" placeholder="Wpisz hasło" required>
+                </div>
+                <button type="submit" class="btn-login">Zaloguj się</button>
+                <p class="login-hint">💡 Hint: ignacy / 1234</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <h1 class="page-title">O Ignacym</h1>
+        <p class="page-subtitle">Poznaj legendę</p>
+    </section>
+
+    <!-- About Content -->
+    <section class="content-section">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-text fade-in">
+                    <h2>Ignacy - Legenda Komputera</h2>
+                    <p>
+                        Ignacy to nie zwykły chłopak. To żywa legenda, która siedzi przy komputerze od rana do nocy. 
+                        Nie ma szansy, aby ktokolwiek go przegonił z jego ulubionego miejsca.
+                    </p>
+                    <p>
+                        Jego dedykacja do komputera jest bezprecedensowa. Niezależnie od tego, czy gra, koduje czy po prostu 
+                        surfa po internecie, Ignacy jest całkowicie zaangażowany w swoje zadanie.
+                    </p>
+                    <p>
+                        Starszy brat? Bez szans! Nawet on nie potrafi wyrzucić Ignacego z PC. To jest walka, którą każdy przegrywa.
+                    </p>
+                </div>
+                <div class="about-stats fade-in" style="animation-delay: 0.2s;">
+                    <div class="stat-card glass-effect">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Godzin przy PC</div>
+                    </div>
+                    <div class="stat-card glass-effect">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Energia</div>
+                    </div>
+                    <div class="stat-card glass-effect">
+                        <div class="stat-number">0</div>
+                        <div class="stat-label">Ustępstwach</div>
+                    </div>
+                    <div class="stat-card glass-effect">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Dedykacji</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personality Section -->
+    <section class="personality-section">
+        <div class="section-container">
+            <h2 class="section-title">Cechy Ignacego</h2>
+            <div class="traits-grid">
+                <div class="trait-card glass-effect">
+                    <span class="trait-emoji">🎯</span>
+                    <h3>Niezłomny</h3>
+                    <p>Nie zna słowa "poddaj się"</p>
+                </div>
+                <div class="trait-card glass-effect">
+                    <span class="trait-emoji">⚡</span>
+                    <h3>Błyskawiczny</h3>
+                    <p>Szybkość nie jest wystarczająca do opisania Ignacego</p>
+                </div>
+                <div class="trait-card glass-effect">
+                    <span class="trait-emoji">🎮</span>
+                    <h3>Gracz</h3>
+                    <p>Zawsze zwycięża, niezależnie od gry</p>
+                </div>
+                <div class="trait-card glass-effect">
+                    <span class="trait-emoji">💪</span>
+                    <h3>Silny</h3>
+                    <p>Psychicznie i fizycznie przygotowany do PC'a</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <div class="section-container">
+            <h2 class="section-title">Historia Ignacego</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-effect">
+                        <h3>Dzień 1</h3>
+                        <p>Ignacy odkrywa komputer. Już nigdy nie będzie taki sam.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-effect">
+                        <h3>Tydzień 1</h3>
+                        <p>Opanowuje każdą grę. Starszy brat nie ma szans.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-effect">
+                        <h3>Miesiąc 1</h3>
+                        <p>Legendę zaczyna się rozpowiadać po całej okolicy.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-effect">
+                        <h3>Dziś</h3>
+                        <p>Ignacy - żywa legenda PC. Nikt go nie pokonał i nikt nie pokonał.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Ignacy - PC Zdobywca. Stworzona z ❤️ dla legendy.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

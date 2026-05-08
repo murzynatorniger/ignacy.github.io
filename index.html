@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignacy - PC Zdobywca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">⚡ IGNACY ⚡</span>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Główna</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">O Ignacym</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Galeria</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Kontakt</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link" id="loginBtn">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="login-modal" id="loginModal">
+        <div class="login-container glass-effect">
+            <button class="close-btn" id="closeLogin">&times;</button>
+            <h2 class="login-title">Zaloguj się</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Login:</label>
+                    <input type="text" id="username" placeholder="Wpisz login" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Hasło:</label>
+                    <input type="password" id="password" placeholder="Wpisz hasło" required>
+                </div>
+                <button type="submit" class="btn-login">Zaloguj się</button>
+                <p class="login-hint">💡 Hint: ignacy / 1234</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Ignacy</h1>
+            <p class="hero-subtitle">Legenda Komputera 🖥️</p>
+            <p class="hero-text">Chłopak, który nigdy nie ustępuje miejsca przy PC</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.querySelector('.about-section').scrollIntoView({behavior: 'smooth'})">Dowiedz się więcej</button>
+                <button class="btn btn-secondary" id="loginBtn2">Zaloguj się</button>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section (Preview) -->
+    <section class="about-section">
+        <div class="section-container">
+            <h2 class="section-title">Kim jest Ignacy?</h2>
+            <div class="cards-grid">
+                <div class="card glass-effect fade-in">
+                    <div class="card-icon">🎮</div>
+                    <h3>Mistrz Gier</h3>
+                    <p>Nikt nie pokonuje Ignacego w grach. Komputer jest jego domem.</p>
+                </div>
+                <div class="card glass-effect fade-in" style="animation-delay: 0.2s;">
+                    <div class="card-icon">💻</div>
+                    <h3>Coding Expert</h3>
+                    <p>Linijka za linijką, kod za kodem. Komputer nie ma sekretu dla Ignacego.</p>
+                </div>
+                <div class="card glass-effect fade-in" style="animation-delay: 0.4s;">
+                    <div class="card-icon">⚡</div>
+                    <h3>Super Moc</h3>
+                    <p>Szybkość, precyzja, profesjonalizm. Ignacy to jest legenda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="section-container">
+            <h2 class="section-title">Supermocne Umiejętności</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <div class="feature-content">
+                        <h3>24/7 Gaming Mode</h3>
+                        <p>Ignacy może grać non-stop bez przerwy. Energia nieskończona.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <div class="feature-content">
+                        <h3>Never Give Up Attitude</h3>
+                        <p>Nigdy nie ustępuje miejsca przy PC, zawsze walczy do konca.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <div class="feature-content">
+                        <h3>Lightning Fast Reflexes</h3>
+                        <p>Szybkość reagowania Ignacego przewyższa każdy czujnik.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">04</div>
+                    <div class="feature-content">
+                        <h3>Master of All Games</h3>
+                        <p>Od indie gier po AAA tytuły - wszystko opanuje Ignacy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Ignacy - PC Zdobywca. Stworzona z ❤️ dla legendy.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

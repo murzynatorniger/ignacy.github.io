@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - PC Zdobywca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">⚡ IGNACY ⚡</span>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Główna</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">O Ignacym</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Galeria</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Kontakt</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link" id="loginBtn">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="login-modal" id="loginModal">
+        <div class="login-container glass-effect">
+            <button class="close-btn" id="closeLogin">&times;</button>
+            <h2 class="login-title">Zaloguj się</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Login:</label>
+                    <input type="text" id="username" placeholder="Wpisz login" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Hasło:</label>
+                    <input type="password" id="password" placeholder="Wpisz hasło" required>
+                </div>
+                <button type="submit" class="btn-login">Zaloguj się</button>
+                <p class="login-hint">💡 Hint: ignacy / 1234</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <h1 class="page-title">Kontakt</h1>
+        <p class="page-subtitle">Skontaktuj się z Ignacym</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="section-container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper fade-in">
+                    <h2>Wyślij wiadomość</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Imię:</label>
+                            <input type="text" id="name" name="name" placeholder="Twoje imię" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Twój email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Wiadomość:</label>
+                            <textarea id="message" name="message" placeholder="Twoja wiadomość..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Wyślij</button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info fade-in" style="animation-delay: 0.2s;">
+                    <h2>Informacje Kontaktowe</h2>
+                    
+                    <div class="info-card glass-effect">
+                        <div class="info-icon">📍</div>
+                        <h3>Adres</h3>
+                        <p>Siedziby przy Komputerze 24/7</p>
+                        <p>Legenda PC, Poland 42-000</p>
+                    </div>
+
+                    <div class="info-card glass-effect">
+                        <div class="info-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>ignacy@pclegenda.pl</p>
+                        <p>kontakt@ignacylegend.com</p>
+                    </div>
+
+                    <div class="info-card glass-effect">
+                        <div class="info-icon">📱</div>
+                        <h3>Telefon</h3>
+                        <p>+48 123 456 789</p>
+                        <p>(tylko gdy nie gra)</p>
+                    </div>
+
+                    <div class="info-card glass-effect">
+                        <div class="info-icon">⏰</div>
+                        <h3>Dostępność</h3>
+                        <p>24/7 - zawsze przy PC</p>
+                        <p>Natychmiastowa odpowiedź (między grami)</p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-btn">Discord</a>
+                        <a href="#" class="social-btn">Twitch</a>
+                        <a href="#" class="social-btn">YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="section-container">
+            <h2 class="section-title">Pytania i Odpowiedzi</h2>
+            <div class="faq-grid">
+                <div class="faq-item glass-effect">
+                    <h3>❓ Czy mogę wyrzucić Ignacego z PC?</h3>
+                    <p>Teoretycznie tak, praktycznie nigdy.</p>
+                </div>
+                <div class="faq-item glass-effect">
+                    <h3>❓ Ile czasu Ignacy spędza przy komputerze?</h3>
+                    <p>24 godziny na dobę, 7 dni w tygodniu, 365 dni w roku.</p>
+                </div>
+                <div class="faq-item glass-effect">
+                    <h3>❓ Czy Ignacy kiedyś przegrywa?</h3>
+                    <p>Definitywnie nie. Zwycięstwo to jego druga natura.</p>
+                </div>
+                <div class="faq-item glass-effect">
+                    <h3>❓ Jak zostać jak Ignacy?</h3>
+                    <p>Poświęcenie, trening i absolutna dedykacja do PC.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Ignacy - PC Zdobywca. Stworzona z ❤️ dla legendy.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
